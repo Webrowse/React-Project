@@ -1,11 +1,5 @@
 import React from "react";
 import ReactDom from "react-dom"
+import App from "./components/App";
 
-<button type="button" className="click">Click Me!</button>
-ReactDom.render(
-  <div>
-    <h1>Hello</h1>
-    <button type="button" className="click">Click Me!</button>
-    
-  </div>, 
-    document.getElementById("root"));
+ReactDom.render(<App />, document.getElementById("root"));
