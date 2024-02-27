@@ -2,16 +2,20 @@ import React, { useState } from "react";
 
 function App() {
     const [heading, setHeading] = useState("Hello");
-    
+    const [isMouseOver, setMouseOver] = useState(false);
+
     function mouseOver(event){
-        setHeading("Waah");
+
         console.log("ho gya");
+    }
+    function click(event){
+        setHeading("Submitted");
     }
   return (
     <div className="container">
       <h1>{heading}</h1>
       <input type="text" placeholder="What's your name?" />
-      <button onMouseOver={mouseOver}>Submit</button>
+      <button onClick={click}>Submit</button>
     </div>
   );
 }
